@@ -29,7 +29,7 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x
 
 ### 📌 Versão
 
-* Original - 08/01/2025 
+* 0.1 - 16/01/2025 
 
 
 ### 📄 Licença
