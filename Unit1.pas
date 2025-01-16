@@ -28,9 +28,10 @@ type
     Label6: TLabel;
     Label7: TLabel;
     procedure Button1Click(Sender: TObject);
+    procedure limpar();
   private
     { Private declarations }
-    const porta:array[0..5] of string = ('3055', '3040','3030','3025', '3015','3050');
+    const porta:array[0..3] of string = ('3040','3030','3025', '3015');
   public
     { Public declarations }
   end;
@@ -54,6 +55,7 @@ var
   i:integer;
   s:string;
 begin
+  limpar;
   OpenDialog1.Filter := 'Bancos de Dados Firebird|*.GDB;*.FDB;';
   if OpenDialog1.Execute then
   begin
@@ -86,7 +88,7 @@ begin
         13:
         begin
           case IBDatabaseInfo1.ODSMinorVersion of
-            1: lbFBv.Caption := 'Firebird 5.0';
+            //1: lbFBv.Caption := 'Firebird 5.0';
             0: lbFBv.Caption := 'Firebird 4.0';
             else lbFBv.Caption := 'Firebird versão desconhecida';
           end;
@@ -121,13 +123,7 @@ begin
       if i = High(porta) then
       begin
         ShowMessage('Não foi possível a conexão com o banco de dados');
-        edtBD.Text := EmptyStr;
-        lblFBserver.Caption := EmptyStr;
-        lbODS.Caption := EmptyStr;
-        lbFBv.Caption := EmptyStr;
-        lblPorta.Caption := EmptyStr;
-        lblPS.Caption := EmptyStr;
-        lblDialetoSQL.Caption := EmptyStr;
+        limpar;
       end;
       continue;
     end;
@@ -138,6 +134,17 @@ begin
     edtBD.Text := EmptyStr;
     OpenDialog1.FileName := EmptyStr;
   end;
+end;
+
+procedure TForm1.limpar;
+begin
+   edtBD.Text := EmptyStr;
+   lblFBserver.Caption := EmptyStr;
+   lbODS.Caption := EmptyStr;
+   lbFBv.Caption := EmptyStr;
+   lblPorta.Caption := EmptyStr;
+   lblPS.Caption := EmptyStr;
+   lblDialetoSQL.Caption := EmptyStr;
 end;
 
 end.

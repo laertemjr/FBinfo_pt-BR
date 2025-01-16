@@ -133,10 +133,8 @@ object Form1: TForm1
     Width = 624
     Height = 15
     Align = alBottom
-    Caption = 
-      'Desenvolvido em Delphi 12.1, componentes IBX, vers'#227'o de testes (' +
-      '2025)'
-    ExplicitWidth = 375
+    Caption = 'Desenvolvido em Delphi 12.1, componentes IBX, vers'#227'o 0.1 (2025)'
+    ExplicitWidth = 344
   end
   object Button1: TButton
     Left = 16
