@@ -18,7 +18,7 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x
 
 ### ⚙️ Executando os testes
 
-* Para testar o código deste projeto, basta fazer o download do arquivo executável, acessível a partir da pasta [Win32/Debug](https://github.com/laertemjr/FBinfo/tree/main/Win32/Debug) deste repositório.
+* Para testar o código deste projeto, basta fazer o download do arquivo executável, acessível a partir da pasta [Win32/Debug](https://github.com/laertemjr/FBinfo_pt-BR/tree/main/Win32/Debug) deste repositório.
 
 
 ### 🛠️ Construído com
@@ -34,4 +34,4 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x
 
 ### 📄 Licença
 
-* Este projeto está sob a licença *The Unlicense* - veja o arquivo [LICENSE.md](https://github.com/laertemjr/FBinfo/blob/main/LICENSE.md) para detalhes.
+* Este projeto está sob a licença *The Unlicense* - veja o arquivo [LICENSE.md](https://github.com/laertemjr/FBinfo_pt-BR/blob/main/LICENSE.md) para detalhes.
