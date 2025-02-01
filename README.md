@@ -5,9 +5,9 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x
 <br/>
 ### 📋 Pré-requisitos
 
-*  Windows 10
-*  Servidores Firebird sendo executados nas seguintes versões e portas:
-   * 1.5 => 3015
+*  [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/en-us/windows/)
+*  Servidores Firebird sendo executados nas seguintes versões: 1.5, 2.5, 3.0, e 4.0
+   * 
    * 2.5 => 3025
    * 3.0 => 3030
    * 4.0 => 3040
