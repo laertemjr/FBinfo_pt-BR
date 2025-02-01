@@ -2,9 +2,9 @@ object Form1: TForm1
   Left = 0
   Top = 0
   Caption = 
-    'UTILIT'#193'RIO - Identifica o Banco de Dados Firebird (compat'#237'vel co' +
-    'm as vers'#245'es 1.x - 4.x)'
-  ClientHeight = 321
+    'FBINFO - Identifica o banco de dados Firebird (compat'#237'vel com as' +
+    ' vers'#245'es 1.x - 4.x)'
+  ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -12,26 +12,30 @@ object Form1: TForm1
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnActivate = FormActivate
   TextHeight = 15
   object Label1: TLabel
     Left = 16
     Top = 70
-    Width = 87
+    Width = 90
     Height = 15
-    Caption = 'Banco de dados:'
+    Caption = 'Banco de dados :'
   end
   object Label2: TLabel
     Left = 16
     Top = 135
-    Width = 346
+    Width = 348
     Height = 15
-    Caption = 'Vers'#227'o do Servidor Firebird que o banco de dados est'#225' conectado:'
+    Caption = 
+      'Vers'#227'o do servidor Firebird que o banco de dados est'#225' conectado ' +
+      ':'
   end
   object lblFBserver: TLabel
     Left = 16
     Top = 156
-    Width = 3
+    Width = 63
     Height = 15
+    Caption = 'lblFBserver'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -42,15 +46,16 @@ object Form1: TForm1
   object Label3: TLabel
     Left = 16
     Top = 191
-    Width = 170
+    Width = 173
     Height = 15
-    Caption = 'Vers'#227'o ODS do  banco de dados:'
+    Caption = 'Vers'#227'o ODS do  banco de dados :'
   end
-  object lbODS: TLabel
+  object lblODS: TLabel
     Left = 16
     Top = 211
-    Width = 3
+    Width = 38
     Height = 15
+    Caption = 'lblODS'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -61,15 +66,16 @@ object Form1: TForm1
   object Label4: TLabel
     Left = 16
     Top = 247
-    Width = 187
+    Width = 190
     Height = 15
-    Caption = 'Vers'#227'o do  banco de dados Firebird:'
+    Caption = 'Vers'#227'o do  banco de dados Firebird :'
   end
-  object lbFBv: TLabel
+  object lblFBv: TLabel
     Left = 16
     Top = 268
-    Width = 3
+    Width = 34
     Height = 15
+    Caption = 'lblFBv'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -77,11 +83,12 @@ object Form1: TForm1
     Font.Style = [fsBold]
     ParentFont = False
   end
-  object lblPorta: TLabel
+  object lblPort: TLabel
     Left = 488
     Top = 191
-    Width = 3
+    Width = 37
     Height = 15
+    Caption = 'lblPort'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -92,8 +99,9 @@ object Form1: TForm1
   object lblPS: TLabel
     Left = 488
     Top = 223
-    Width = 3
+    Width = 27
     Height = 15
+    Caption = 'lblPS'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -104,15 +112,16 @@ object Form1: TForm1
   object Label5: TLabel
     Left = 488
     Top = 156
-    Width = 107
+    Width = 110
     Height = 15
-    Caption = 'Outras informa'#231#245'es:'
+    Caption = 'Outras informa'#231#245'es :'
   end
-  object lblDialetoSQL: TLabel
+  object lblSqlDialect: TLabel
     Left = 488
     Top = 255
-    Width = 3
+    Width = 69
     Height = 15
+    Caption = 'lblSqlDialect'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -123,27 +132,28 @@ object Form1: TForm1
   object Label6: TLabel
     Left = 16
     Top = 8
-    Width = 194
+    Width = 196
     Height = 15
-    Caption = 'Selecione o Banco de Dados Firebird:'
+    Caption = 'Selecione o banco de dados Firebird :'
   end
   object Label7: TLabel
     Left = 0
-    Top = 306
+    Top = 426
     Width = 624
     Height = 15
     Align = alBottom
-    Caption = 'Desenvolvido em Delphi 12.1, componentes IBX, vers'#227'o 0.1 (2025)'
+    Alignment = taCenter
+    Caption = 'Desenvolvido em Delphi 12.1, componentes IBX, vers'#227'o 0.2 (2025)'
     ExplicitWidth = 344
   end
-  object Button1: TButton
+  object btnBrowse: TButton
     Left = 16
     Top = 29
     Width = 145
     Height = 25
-    Caption = 'Procurar'
+    Caption = '&Procurar'
     TabOrder = 0
-    OnClick = Button1Click
+    OnClick = btnBrowseClick
   end
   object edtBD: TEdit
     Left = 16
@@ -152,6 +162,108 @@ object Form1: TForm1
     Height = 23
     ReadOnly = True
     TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 320
+    Width = 624
+    Height = 106
+    Align = alBottom
+    TabOrder = 2
+    object Label8: TLabel
+      Left = 187
+      Top = 8
+      Width = 256
+      Height = 15
+      Caption = 'Configura'#231#227'o das portas dos servidores Firebird :'
+    end
+    object Label9: TLabel
+      Left = 117
+      Top = 40
+      Width = 58
+      Height = 15
+      Caption = 'Firebird 1.5'
+    end
+    object Label10: TLabel
+      Left = 117
+      Top = 69
+      Width = 58
+      Height = 15
+      Caption = 'Firebird 2.5'
+    end
+    object Label11: TLabel
+      Left = 321
+      Top = 40
+      Width = 58
+      Height = 15
+      Caption = 'Firebird 3.0'
+    end
+    object Label12: TLabel
+      Left = 321
+      Top = 69
+      Width = 58
+      Height = 15
+      Caption = 'Firebird 4.0'
+    end
+    object edtFB15: TEdit
+      Left = 187
+      Top = 32
+      Width = 48
+      Height = 23
+      Alignment = taCenter
+      MaxLength = 4
+      NumbersOnly = True
+      TabOrder = 0
+    end
+    object edtFB25: TEdit
+      Left = 187
+      Top = 61
+      Width = 48
+      Height = 23
+      Alignment = taCenter
+      MaxLength = 4
+      NumbersOnly = True
+      TabOrder = 1
+    end
+    object btnEdit: TButton
+      Left = 488
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = '&Alterar'
+      TabOrder = 4
+      OnClick = btnEditClick
+    end
+    object btnCancel: TButton
+      Left = 488
+      Top = 61
+      Width = 75
+      Height = 25
+      Caption = '&Cancelar'
+      Enabled = False
+      TabOrder = 5
+      OnClick = btnCancelClick
+    end
+    object edtFB30: TEdit
+      Left = 390
+      Top = 32
+      Width = 48
+      Height = 23
+      Alignment = taCenter
+      MaxLength = 4
+      NumbersOnly = True
+      TabOrder = 2
+    end
+    object edtFB40: TEdit
+      Left = 390
+      Top = 61
+      Width = 48
+      Height = 23
+      Alignment = taCenter
+      MaxLength = 4
+      NumbersOnly = True
+      TabOrder = 3
+    end
   end
   object IBDatabaseInfo1: TIBDatabaseInfo
     Left = 400
