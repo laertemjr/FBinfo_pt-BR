@@ -23,9 +23,9 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x
 * [![Delphi](https://img.shields.io/badge/-Delphi-E62431?logo=delphi&logoColor=white&style=plastic)](https://www.embarcadero.com/br/products/delphi) 12.1 Athens
 
 
-### 📌 Versão
+### 📌 Versão 0.2 - 01/02/2025
 
-* 0.2 - 01/02/2025 
+*  Novidade: a configuração das portas de acesso aos servidores Firebird podem ser feitas com flexibilidade.
 
 
 ### 📄 Licença
