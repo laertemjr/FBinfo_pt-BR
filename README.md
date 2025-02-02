@@ -27,7 +27,6 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x / *Identifie
 
 * Novidades: suporte multi-idiomas: português do Brasil e Inglês.
 * *News: Multi-language support: Brazilian Portuguese and English.*
-*  Novidade: a configuração das portas de acesso aos servidores Firebird podem ser feitas com flexibilidade.
 
 
 ### 📄 Licença / *License*
