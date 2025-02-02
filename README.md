@@ -29,9 +29,8 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x / *Identifie
 * *News: Multi-language support: Brazilian Portuguese and English.*
 
 
-### Histórico das versões antigas / old versions timeline
+### Histórico das versões antigas / *Old versions timeline*
 * [Old versions timeline](https://github.com/laertemjr/FBinfo/tree/main/READMEold.md)
-
 
 
 ### 📄 Licença / *License*
