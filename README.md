@@ -15,7 +15,7 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x
 
 ### ⚙️ Testando o programa
 
-* Para testar o programa, basta fazer o download do arquivo executável, acessível a partir da pasta [Win32/Debug](https://github.com/laertemjr/FBinfo/tree/main/Win32/Debug) deste repositório.
+* Para testar o programa (portátil), basta fazer o download do arquivo executável, acessível a partir da pasta [Win32/Debug](https://github.com/laertemjr/FBinfo/tree/main/Win32/Debug) deste repositório.
 
 
 ### 🛠️ Construído com
