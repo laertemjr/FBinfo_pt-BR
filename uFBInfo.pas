@@ -83,12 +83,7 @@ uses
 
 procedure TfrmFBInfo.FormActivate(Sender: TObject);
 begin
-   lblFBserver.Caption   := EmptyStr;
-   lblODS.Caption        := EmptyStr;
-   lblFBv.Caption        := EmptyStr;
-   lblPort.Caption       := EmptyStr;
-   lblPS.Caption         := EmptyStr;
-   lblSqlDialect.Caption := EmptyStr;
+   clean;
    iniconf := TIniFile.Create(ExtractFilePath(Application.ExeName) + 'config.ini');
    loadConfigINI;
    EdtReadOnly(True);
