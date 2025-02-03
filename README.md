@@ -3,7 +3,7 @@
 Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x / *Identifies **Firebird** databases between versions 1.x - 4.x*
 <br/>
 <br/>
-### 📋 Pré-requisitos / *System requirements*
+### 🖥️ Pré-requisitos / *System requirements*
 
 *  [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows/)
 *  Servidores [![Firebird](https://img.shields.io/badge/-Firebird-F25225?style=flat)](https://www.firebirdsql.org/) sendo executados nas seguintes versões: 1.5, 2.5, 3.0, e 4.0 / [![Firebird](https://img.shields.io/badge/-Firebird-F25225?style=flat)](https://www.firebirdsql.org/) *servers running on the following versions: 1.5, 2.5, 3.0, and 4.0 :*
@@ -13,7 +13,7 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x / *Identifie
    * Servidor Firebird 1.5 identifica bancos de dados Firebird 1.5 e 1.0 / *Firebird 1.5 Server identifies Firebird 1.5 and 1.0 Firebird databases.*
     
 
-### ⚙️ Testando o programa / *Testing the program*
+### 🔎 Testando o programa / *Testing the program*
 
 * Para testar o programa (portátil), basta fazer o download do arquivo executável, acessível a partir da pasta [Win32/Debug](https://github.com/laertemjr/FBinfo/tree/main/Win32/Debug) deste repositório.
 * *To test the program (portable), simply download the executable file, accessible from the [Win32/Debug](https://github.com/laertemjr/FBinfo/tree/main/Win32/Debug) folder of this repository.*
@@ -29,8 +29,8 @@ Identifica bancos de dados **Firebird** entre as versões 1.x - 4.x / *Identifie
 * *News: Multi-language support: Brazilian Portuguese and English.*
 
 
-### Histórico das versões antigas / *Old versions timeline*
-* [Old versions timeline](https://github.com/laertemjr/FBinfo/tree/main/READMEold.md)
+### :hourglass_flowing_sand: Histórico das versões antigas / *Old versions timeline*
+* *[Old versions timeline](https://github.com/laertemjr/FBinfo/tree/main/READMEold.md)*
 
 
 ### 📄 Licença / *License*
