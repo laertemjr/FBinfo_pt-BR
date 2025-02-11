@@ -65,7 +65,7 @@ var
    iniconf: TIniFile;
    port: array[0..3] of string = ('','','','');
    SoEdt: Boolean;
-   strngs: array[0..9] of string = ('','','','','','','','','','');
+   strngs: array[0..4] of string = ('','','','','');
 
 implementation
 
